@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "gunicorn-aps"
+version = "0.1.0"
+description = ""
+authors = ["Kei Shimizu <suns.manage.k@gmail.com>"]
+readme = "README.md"
+packages = [{include = "gunicorn_aps"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+gunicorn = {extras = ["setproctitle"], version = "^20.1.0"}
+uvicorn = {extras = ["standard"], version = "^0.19.0"}
+fastapi = "^0.85.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
